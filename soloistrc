@@ -1,0 +1,13 @@
+recipes:
+- sprout-osx-apps::dropbox
+# - sprout-osx-apps::chrome
+# - pivotal_workstation::1password
+# - sprout-osx-apps::evernote
+# - pivotal_workstation::textmate
+# - sprout-osx-apps::firefox
+# - sprout-osx-apps::adium
+# - sprout-osx-apps::sequelpro
+# - pivotal_workstation::rvm
+# - pivotal_workstation::mysql
+# - pivotal_workstation::homebrew
+# - pivotal_workstation::java
