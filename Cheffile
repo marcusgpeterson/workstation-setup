@@ -16,3 +16,5 @@ cookbook 'osx',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
   :path => 'osx'
 
+cookbook 'marcus-workstation',
+  :path => 'site-cookbooks/marcus-workstation'
