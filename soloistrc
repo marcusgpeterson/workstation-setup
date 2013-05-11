@@ -1,5 +1,5 @@
 recipes:
-- marcus-workstation::dropbox
+- marcus-workstation::quicksilver
 # - sprout-osx-apps::chrome
 # - pivotal_workstation::1password
 # - sprout-osx-apps::evernote
