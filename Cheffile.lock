@@ -4,6 +4,13 @@ SITE
     dmg (1.1.0)
 
 GIT
+  remote: git://github.com/fnichol/chef-zip_app.git
+  ref: v0.2.2
+  sha: 571d1b832f6b5bcfc2d87fa5a26551e9db58e81c
+  specs:
+    zip_app (0.2.2)
+
+GIT
   remote: git://github.com/pivotal-sprout/sprout.git
   path: osx
   ref: master
@@ -53,4 +60,5 @@ DEPENDENCIES
   pivotal_workstation (>= 0)
   sprout-osx-apps (>= 0)
   sprout-osx-settings (>= 0)
+  zip_app (>= 0)
 

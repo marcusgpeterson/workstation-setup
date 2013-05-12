@@ -16,5 +16,9 @@ cookbook 'osx',
   :git => 'git://github.com/pivotal-sprout/sprout.git',
   :path => 'osx'
 
+cookbook 'zip_app',
+  :git => 'git://github.com/fnichol/chef-zip_app.git', 
+  :ref => 'v0.2.2'
+
 cookbook 'marcus-workstation',
   :path => 'site-cookbooks/marcus-workstation'
