@@ -1,7 +1,44 @@
-dmg_package "Quicksilver" do
-  volumes_dir "Quicksilver Installer"
-  source "http://qsapp.com/download.php"
-  checksum "0afb16445d12d7dd641aa8b2694056e319d23f785910a8c7c7de56219db6853c"
-  action :install
-  owner node['current_user']
+pref_dir = "Library/PreferencePanes"
+pref_name = 'Witch'
+pref_volume = '/Volumes/Witch'
+pref_dmg_file = 'witch392.dmg'
+pref_source = "http://manytricks.com/download/witch"
+pref_checksum = '4ebf6d601ffc6595f6365d95fe919757d14bfe0904b3015a06476b70ce3ab4a3'
+
+global_pref = "/#{pref_dir}/#{pref_name}.prefPane"
+local_pref = "Users/#{node['current_user']}/#{pref_dir}/#{pref_name}.prefPane"
+
+if File.exists?(global_pref) || File.exists?(local_pref)
+  log("#{pref_name} already installed; to upgrade, remove #{pref_dir}/#{pref_name}.prefPane")
+else
+  remote_file "#{Chef::Config[:file_cache_path]}/#{pref_dmg_file}" do
+    source pref_source
+    owner node['current_user']
+    checksum pref_checksum
+  end
+
+  #TODO -> fix permission denied error
+  execute "mount #{pref_dmg_file}" do
+    command "hdiutil attach #{Chef::Config[:file_cache_path]}/#{pref_name}.dmg"
+    user node['current_user']
+  end
+
+  #TODO -> get copy comman working
+  #execute "copy #{pref_name} to ~/#{pref_dir}" do
+  #  command "cp #{pref_volume}/#{pref_name}.prefPane #{pref_dir}"
+  #  user node['current_user']
+  #  group "admin"
+  #end
+
+  #START HERE!
+
+  ruby_block "test to see if #{pref_dmg_file} was installed" do
+    block do
+      raise "#{pref_name} was not installed" unless File.exists?("~/#{pref_dir}.prefPane")
+    end
+  end
+
 end
+
+
+

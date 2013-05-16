@@ -1,6 +1,7 @@
 recipes:
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
+- marcus-workstation::witch
 # - sprout-osx-apps::chrome
 # - pivotal_workstation::1password
 # - sprout-osx-apps::evernote
