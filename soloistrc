@@ -2,6 +2,7 @@ recipes:
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
 - marcus-workstation::witch
+# - pivotal_workstation::rubymine
 # - sprout-osx-apps::chrome
 # - pivotal_workstation::1password
 # - sprout-osx-apps::evernote

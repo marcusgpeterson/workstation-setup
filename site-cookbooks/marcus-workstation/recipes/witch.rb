@@ -1,4 +1,5 @@
 #TODO Make this more DRY
+#TODO generalize PrefPane installs
 
 pref_dir = "Library/PreferencePanes"
 pref_name = 'Witch'
