@@ -2,6 +2,7 @@ recipes:
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
 - marcus-workstation::witch
+- marcus-workstation::vmwarefusion
 - sprout-osx-apps::flux
 - sprout-osx-apps::dropbox
 - pivotal_workstation::rubymine
@@ -12,7 +13,7 @@ recipes:
 - sprout-osx-apps::firefox
 - sprout-osx-apps::adium
 - sprout-osx-apps::sequelpro
-# - pivotal_workstation::rvm
-# - pivotal_workstation::mysql
-# - pivotal_workstation::homebrew
-# - pivotal_workstation::java
+- pivotal_workstation::rvm
+- pivotal_workstation::mysql
+- pivotal_workstation::homebrew
+- pivotal_workstation::java
