@@ -1,3 +1,5 @@
+#TODO Make this more DRY
+
 pref_dir = "Library/PreferencePanes"
 pref_name = 'Witch'
 pref_volume = '/Volumes/Witch'
@@ -9,32 +11,30 @@ global_pref = "/#{pref_dir}/#{pref_name}.prefPane"
 local_pref = "Users/#{node['current_user']}/#{pref_dir}/#{pref_name}.prefPane"
 
 if File.exists?(global_pref) || File.exists?(local_pref)
-  log("#{pref_name} already installed; to upgrade, remove #{pref_dir}/#{pref_name}.prefPane")
+  Chef::Log.warn("#{pref_name} already installed; to upgrade, remove #{pref_dir}/#{pref_name}.prefPane")
 else
   remote_file "#{Chef::Config[:file_cache_path]}/#{pref_dmg_file}" do
     source pref_source
     owner node['current_user']
+    #user node['current_user']
     checksum pref_checksum
   end
 
-  #TODO -> fix permission denied error
   execute "mount #{pref_dmg_file}" do
-    command "hdiutil attach #{Chef::Config[:file_cache_path]}/#{pref_name}.dmg"
+    command "hdiutil attach #{Chef::Config[:file_cache_path]}/#{pref_dmg_file}"
     user node['current_user']
+    group 'admin'
   end
 
-  #TODO -> get copy comman working
-  #execute "copy #{pref_name} to ~/#{pref_dir}" do
-  #  command "cp #{pref_volume}/#{pref_name}.prefPane #{pref_dir}"
-  #  user node['current_user']
-  #  group "admin"
-  #end
+  execute "copy #{pref_name} to ~/#{pref_dir}" do
+    command "cp -r #{pref_volume}/#{pref_name}.prefPane ~/#{pref_dir}"
+    user node['current_user']
+    group "admin"
+  end
 
-  #START HERE!
-
-  ruby_block "test to see if #{pref_dmg_file} was installed" do
+  ruby_block "test to see if #{pref_name} was installed" do
     block do
-      raise "#{pref_name} was not installed" unless File.exists?("~/#{pref_dir}.prefPane")
+      raise "#{pref_name} was not installed" unless File.exists?(local_pref)
     end
   end
 
