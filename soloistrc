@@ -3,6 +3,7 @@ recipes:
 - marcus-workstation::hipchat
 - marcus-workstation::witch
 - marcus-workstation::vmwarefusion
+- marcus-workstation::google_notifier
 - sprout-osx-apps::flux
 - sprout-osx-apps::dropbox
 - pivotal_workstation::rubymine
