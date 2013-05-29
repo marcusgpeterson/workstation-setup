@@ -1,4 +1,5 @@
 recipes:
+- pivotal_workstation::java
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
 - marcus-workstation::witch
@@ -17,4 +18,3 @@ recipes:
 - pivotal_workstation::rvm
 - pivotal_workstation::mysql
 - pivotal_workstation::homebrew
-- pivotal_workstation::java
