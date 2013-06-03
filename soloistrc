@@ -1,20 +1,18 @@
 recipes:
+- marcus-workstation::1password
 - pivotal_workstation::java
+- pivotal_workstation::textmate
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
 - marcus-workstation::witch
-- marcus-workstation::vmwarefusion
-- marcus-workstation::google_notifier
+# - marcus-workstation::vmwarefusion
+# - marcus-workstation::google_notifier
 - sprout-osx-apps::flux
 - sprout-osx-apps::dropbox
 - pivotal_workstation::rubymine
 - sprout-osx-apps::chrome
-- pivotal_workstation::1password
 - sprout-osx-apps::evernote
-- pivotal_workstation::textmate
 - sprout-osx-apps::firefox
 - sprout-osx-apps::adium
 - sprout-osx-apps::sequelpro
-- pivotal_workstation::rvm
 - pivotal_workstation::mysql
-- pivotal_workstation::homebrew
