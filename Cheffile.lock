@@ -1,7 +1,8 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    dmg (1.1.0)
+    dmg (2.0.4)
+    homebrew (1.5.4)
 
 GIT
   remote: git://github.com/fnichol/chef-zip_app.git
@@ -14,7 +15,7 @@ GIT
   remote: git://github.com/pivotal-sprout/sprout.git
   path: osx
   ref: master
-  sha: f357baf1b4e13e4f3135620589e4c373d5a4480e
+  sha: 2baedb853f3516156365f73438c27a1f4c6d7059
   specs:
     osx (0.1.0)
 
@@ -22,43 +23,74 @@ GIT
   remote: git://github.com/pivotal-sprout/sprout.git
   path: pivotal_workstation
   ref: master
-  sha: f357baf1b4e13e4f3135620589e4c373d5a4480e
+  sha: 2baedb853f3516156365f73438c27a1f4c6d7059
   specs:
     pivotal_workstation (1.0.0)
       dmg (>= 0.0.0)
+      homebrew (>= 0.0.0)
       osx (>= 0.0.0)
       sprout-osx-apps (>= 0.0.0)
+      sprout-osx-base (>= 0.0.0)
       sprout-osx-settings (>= 0.0.0)
+      sprout-pivotal (>= 0.0.0)
 
 GIT
   remote: git://github.com/pivotal-sprout/sprout.git
   path: sprout-osx-apps
   ref: master
-  sha: f357baf1b4e13e4f3135620589e4c373d5a4480e
+  sha: 2baedb853f3516156365f73438c27a1f4c6d7059
   specs:
     sprout-osx-apps (0.1.0)
       dmg (>= 0.0.0)
+      homebrew (>= 0.0.0)
+      sprout-osx-base (>= 0.0.0)
+      sprout-osx-settings (>= 0.0.0)
+
+GIT
+  remote: git://github.com/pivotal-sprout/sprout.git
+  path: sprout-osx-base
+  ref: master
+  sha: 2baedb853f3516156365f73438c27a1f4c6d7059
+  specs:
+    sprout-osx-base (0.1.0)
 
 GIT
   remote: git://github.com/pivotal-sprout/sprout.git
   path: sprout-osx-settings
   ref: master
-  sha: f357baf1b4e13e4f3135620589e4c373d5a4480e
+  sha: 2baedb853f3516156365f73438c27a1f4c6d7059
   specs:
     sprout-osx-settings (0.1.0)
+      homebrew (>= 0.0.0)
       osx (>= 0.0.0)
+      sprout-osx-base (>= 0.0.0)
+
+GIT
+  remote: git://github.com/pivotal-sprout/sprout.git
+  path: sprout-pivotal
+  ref: master
+  sha: 2baedb853f3516156365f73438c27a1f4c6d7059
+  specs:
+    sprout-pivotal (0.1.0)
+      dmg (>= 0.0.0)
+      homebrew (>= 0.0.0)
+      sprout-osx-base (>= 0.0.0)
 
 PATH
   remote: site-cookbooks/marcus-workstation
   specs:
     marcus-workstation (0.0.1)
       dmg (>= 0.0.0)
+      zip_app (>= 0.0.0)
 
 DEPENDENCIES
+  dmg (= 2.0.4)
   marcus-workstation (>= 0)
   osx (>= 0)
   pivotal_workstation (>= 0)
   sprout-osx-apps (>= 0)
+  sprout-osx-base (>= 0)
   sprout-osx-settings (>= 0)
+  sprout-pivotal (>= 0)
   zip_app (>= 0)
 
