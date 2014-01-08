@@ -1,6 +1,7 @@
 recipes:
 - marcus-workstation::1password
 - sprout-osx-apps::java
+- marcus-workstation::rubymine
 - marcus-workstation::textmate2
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
@@ -14,7 +15,6 @@ recipes:
 - sprout-osx-apps::firefox
 - sprout-osx-apps::adium
 - sprout-osx-apps::sequelpro
-# - pivotal_workstation::mysql
+- pivotal_workstation::mysql
 
-# discovered that sprout_osx_apps_homebrew_cask installs force unwanted profile settings: rubymine, mysql; need to write custom recipes for these apps
-
+# discovered that sprout_osx_apps_homebrew_cask installs force unwanted profile settings: mysql; need to write custom recipes for these apps
