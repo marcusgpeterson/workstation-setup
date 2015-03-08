@@ -1,20 +1,8 @@
 site 'https://supermarket.getchef.com/api/v1'
-cookbook "dmg", :github => "opscode-cookbooks/dmg", :ref => "v2.1.4"
-
-cookbook 'sprout-base',
-  :git => 'git://github.com/pivotal-sprout/sprout-base.git'
-
-cookbook 'sprout-osx-apps',
-  :git => 'git://github.com/pivotal-sprout/sprout-osx-apps.git'
-
-cookbook 'osx', :github => 'pivotal-sprout/osx'
-
-cookbook 'sprout-osx-settings',
-  :git => 'git://github.com/pivotal-sprout/sprout-osx-settings.git'
-
-cookbook 'zip_app',
-  :git => 'git://github.com/fnichol/chef-zip_app.git',
-  :ref => 'v0.2.2'
-
-cookbook 'marcus-workstation',
-  :path => 'site-cookbooks/marcus-workstation'
+cookbook "dmg", github: 'opscode-cookbooks/dmg', ref: 'v2.1.4'
+cookbook 'sprout-base', github: 'marcusgpeterson/sprout-base'
+cookbook 'sprout-osx-apps', github: 'marcusgpeterson/sprout-osx-apps'
+cookbook 'osx', github: 'pivotal-sprout/osx'
+cookbook 'sprout-osx-settings', git: 'git://github.com/pivotal-sprout/sprout-osx-settings.git'
+cookbook 'zip_app', git: 'git://github.com/fnichol/chef-zip_app.git', ref: 'v0.2.2'
+cookbook 'marcus-workstation', path: 'site-cookbooks/marcus-workstation'
