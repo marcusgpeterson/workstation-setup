@@ -1,4 +1,4 @@
-Workstation Setup
+Workstation Setup (OS X 10.10)
 ===============
 Rapidly provision a local OS X Yosemite development environment using [Chef](https://www.chef.io/chef/), [chef-solo](https://docs.chef.io/chef_solo.html), and [Soloist](https://github.com/mkocher/soloist).
 
