@@ -6,8 +6,7 @@ recipes:
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
 - marcus-workstation::witch
-# - marcus-workstation::vmwarefusion
-# - marcus-workstation::google_notifier
+- marcus-workstation::vmwarefusion
 - sprout-osx-apps::flux
 - sprout-osx-apps::dropbox
 - sprout-osx-apps::chrome
@@ -15,6 +14,9 @@ recipes:
 - sprout-osx-apps::firefox
 - sprout-osx-apps::adium
 - sprout-osx-apps::sequelpro
+- sprout-osx-apps::cyberduck
+- sprout-osx-apps::google_drive
+
 #- pivotal_workstation::mysql
 
-# discovered that sprout_osx_apps_homebrew_cask installs force unwanted profile settings: mysql; need to write custom recipes for these apps
+# 1. discovered that sprout_osx_apps_homebrew_cask installs force unwanted profile settings: mysql; need to write custom recipes for these apps
