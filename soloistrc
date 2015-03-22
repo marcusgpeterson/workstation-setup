@@ -1,22 +1,34 @@
 recipes:
+- marcus-workstation::homebrew_cask
 - marcus-workstation::1password
-- sprout-osx-apps::java
+- marcus-workstation::java
 - marcus-workstation::rubymine
 - marcus-workstation::textmate2
 - marcus-workstation::quicksilver
 - marcus-workstation::hipchat
 - marcus-workstation::witch
 - marcus-workstation::vmwarefusion
-- sprout-osx-apps::flux
-- sprout-osx-apps::dropbox
-- sprout-osx-apps::chrome
-- sprout-osx-apps::evernote
-- sprout-osx-apps::firefox
-- sprout-osx-apps::adium
-- sprout-osx-apps::sequelpro
-- sprout-osx-apps::cyberduck
-- sprout-osx-apps::google_drive
-
-#- pivotal_workstation::mysql
-
-# 1. discovered that sprout_osx_apps_homebrew_cask installs force unwanted profile settings: mysql; need to write custom recipes for these apps
+- marcus-workstation::vuze
+- marcus-workstation::flux
+- marcus-workstation::dropbox
+- marcus-workstation::chrome
+- marcus-workstation::evernote
+- marcus-workstation::firefox
+- marcus-workstation::adium
+- marcus-workstation::sequelpro
+- marcus-workstation::cyberduck
+- marcus-workstation::google_drive
+- marcus-workstation::spotify
+- marcus-workstation::sublime-text
+- marcus-workstation::mysql
+- marcus-workstation::amazon-music
+- marcus-workstation::android-file-transfer
+- marcus-workstation::dash
+- marcus-workstation::garmin-training-center
+- marcus-workstation::github
+- marcus-workstation::graphviz
+- marcus-workstation::insomniax
+- marcus-workstation::omnigraffle
+- marcus-workstation::sqlitebrowser
+- marcus-workstation::vlc
+- marcus-workstation::gmail-notifr
