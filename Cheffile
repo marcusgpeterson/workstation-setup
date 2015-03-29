@@ -1,7 +1,7 @@
 site 'https://supermarket.getchef.com/api/v1'
-cookbook 'zip_app', git: 'git://github.com/fnichol/chef-zip_app.git', ref: 'v0.2.2'
-# cookbook 'sprout-base', github: 'marcusgpeterson/sprout-base'
-# cookbook 'sprout-osx-apps', github: 'marcusgpeterson/sprout-osx-apps'
-# cookbook 'sprout-osx-settings', git: 'git://github.com/pivotal-sprout/sprout-osx-settings.git'
+# zip_app not comptible with Chef 12. Only 1Password recipe currently uses this,
+# so the current plan is to replace this recipe with another call to homebrew cask, then
+# to remove the zip_app lwrp.
+# cookbook 'zip_app', git: 'git://github.com/fnichol/chef-zip_app.git', ref: 'v0.2.2'
 cookbook 'homebrew'
 cookbook 'marcus-workstation', path: 'site-cookbooks/marcus-workstation'

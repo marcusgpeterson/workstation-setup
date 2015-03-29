@@ -1,26 +1,17 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
-    build-essential (2.2.0)
+    build-essential (2.2.2)
     homebrew (1.12.0)
       build-essential (>= 2.1.2)
-
-GIT
-  remote: git://github.com/fnichol/chef-zip_app.git
-  ref: v0.2.2
-  sha: 571d1b832f6b5bcfc2d87fa5a26551e9db58e81c
-  specs:
-    zip_app (0.2.2)
 
 PATH
   remote: site-cookbooks/marcus-workstation
   specs:
     marcus-workstation (0.0.1)
       homebrew (>= 1.6.6)
-      zip_app (>= 0.0.0)
 
 DEPENDENCIES
   homebrew (>= 0)
   marcus-workstation (>= 0)
-  zip_app (>= 0)
 

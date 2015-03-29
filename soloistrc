@@ -1,6 +1,6 @@
 recipes:
 - marcus-workstation::homebrew_cask
-- marcus-workstation::1password
+# - marcus-workstation::1password # TO-DO: replace zip app package approach with homebrew.
 - marcus-workstation::java
 - marcus-workstation::rubymine
 - marcus-workstation::textmate2
