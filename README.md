@@ -6,4 +6,4 @@ Wherever possible, the included recipes invoke [Homebrew Cask](http://caskroom.i
 
 This approach to provisioning a development environment was heavily inspired by Pivotal Labs' [Pivotal Sprout Project](https://github.com/pivotal-sprout) and an article by [Roderik van der Veer](https://github.com/roderik) that is now only available on the web as a [cached copy](http://webcache.googleusercontent.com/search?q=cache:BbQsRRLNzOgJ:vanderveer.be/automating-the-setup-of-my-perfect-developer-environment-on-osx-10-8-mountain-lion).
 
-Dependencies: Ruby, Homebrew, Xcode CLI tools
+Dependencies: Ruby 2.2.1, Homebrew, Xcode CLI tools
