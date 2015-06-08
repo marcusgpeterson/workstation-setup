@@ -133,3 +133,6 @@ PLATFORMS
 DEPENDENCIES
   librarian-chef
   soloist
+
+BUNDLED WITH
+   1.10.3

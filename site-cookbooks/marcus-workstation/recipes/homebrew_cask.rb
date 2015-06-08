@@ -8,6 +8,6 @@ package "brew-cask"
 directory '/opt/homebrew-cask/Caskroom' do
   action :create
   recursive true
-  mode '0755'
+  mode '0775'
   group 'staff'
 end
